@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Persebaran SPBU Kabupaten Bantul</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        iframe {
+            width: 100%;
+            max-width: 100%;
+            border: none;
+            height: 600px;
+        }
+    </style>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#page-top">SPBU Bantul</a></li>
+            <li class="sidebar-nav-item"><a href="#deskripsi">Deskripsi</a></li>
+            <li class="sidebar-nav-item"><a href="#tujuan-manfaat">Tujuan & Manfaat</a></li>
+            <li class="sidebar-nav-item"><a href="#sumber-data">Sumber Data</a></li>
+            <li class="sidebar-nav-item"><a href="#peta-interaktif">Peta Interaktif</a></li>
+            <li class="sidebar-nav-item"><a href="#kesimpulan">Kesimpulan</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex align-items-center">
+        <div class="container px-4 px-lg-5 text-center">
+            <h1 class="mb-1">Analisis Persebaran SPBU di Kabupaten Bantul</h1>
+            <h3 class="mb-5"><em>Visualisasi Interaktif dan Kajian Spasial</em></h3>
+            <a class="btn btn-primary btn-xl" href="#deskripsi">Jelajahi</a>
+        </div>
+    </header>
+
+    <!-- Deskripsi -->
+    <section class="content-section bg-light" id="deskripsi">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2>Deskripsi</h2>
+            <p class="lead mb-5 text-justify">
+                Jumlah kendaraan di Indonesia yang terus meningkat berimbas pada bertambahnya kebutuhan Stasiun Pengisian Bahan Bakar Umum (SPBU). Kabupaten Bantul sebagai wilayah strategis memerlukan distribusi SPBU yang merata agar masyarakat mudah mengakses BBM. Website ini menyajikan peta interaktif dan analisis spasial persebaran SPBU berbasis data geografis untuk mendukung perencanaan dan informasi publik.
+            </p>
+            <a class="btn btn-dark btn-xl" href="#tujuan-manfaat">Lanjutkan</a>
+        </div>
+    </section>
+
+    <!-- Tujuan dan Manfaat -->
+    <section class="content-section bg-primary text-white text-center" id="tujuan-manfaat">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading">
+                <h3 class="text-secondary mb-0">Tujuan & Manfaat</h3>
+                <h2 class="mb-5">Mengapa Website Ini Dibuat?</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <i class="icon-screen-desktop service-icon mx-auto mb-3"></i>
+                    <h4><strong>Edukasi Digital</strong></h4>
+                    <p class="text-faded">Sebagai sarana pembelajaran tentang penggunaan sistem informasi geografis (GIS) dalam perencanaan wilayah.</p>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <i class="icon-location-pin service-icon mx-auto mb-3"></i>
+                    <h4><strong>Akses Informasi</strong></h4>
+                    <p class="text-faded">Memberikan informasi lokasi SPBU secara cepat dan akurat kepada masyarakat umum.</p>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <i class="icon-energy service-icon mx-auto mb-3"></i>
+                    <h4><strong>Perencanaan Infrastruktur</strong></h4>
+                    <p class="text-faded">Mendukung penentuan lokasi SPBU baru berdasarkan kebutuhan dan kepadatan penduduk.</p>
+                </div>
+            </div>
+            <a class="btn btn-light btn-xl" href="#sumber-data">Lanjut ke Sumber Data</a>
+        </div>
+    </section>
+
+    <!-- Sumber Data -->
+    <section class="content-section" id="sumber-data">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mb-4">Sumber Data</h2>
+            <ul class="text-center list-unstyled">
+                <li>📌 Data shapefile wilayah Bantul dari LapakGIS</li>
+                <li>📌 Peta administrasi dan jaringan jalan Kabupaten Bantul</li>
+                <li>📌 Data persebaran SPBU dan kepadatan penduduk dari BPS</li>
+                <li>📌 Data koordinat dan aksesibilitas dari hasil observasi lapangan</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Peta Interaktif -->
+    <section class="content-section bg-primary text-white" id="peta-interaktif">
+        <div class="container text-center">
+            <h2 class="mb-4">Peta Interaktif SPBU Kabupaten Bantul</h2>
+            <iframe src="http://localhost:7080/mapstore/#/dashboard/44" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Kesimpulan -->
+    <section class="content-section bg-light" id="kesimpulan">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2 class="mb-4">Kesimpulan</h2>
+            <p class="lead text-justify">Website ini menunjukkan pentingnya analisis spasial dalam pemerataan fasilitas publik seperti SPBU. Melalui data yang dikaji, kita bisa mengidentifikasi wilayah yang belum terlayani dengan baik dan menyusun strategi pembangunan yang tepat sasaran. Diharapkan, informasi ini menjadi dasar bagi perencana wilayah, pemerintah, dan masyarakat.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container px-4 px-lg-5">
+            <ul class="list-inline mb-3">
+                <li class="list-inline-item"><a class="social-link rounded-circle text-white" href="#"><i class="icon-social-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="social-link rounded-circle text-white" href="#"><i class="icon-social-twitter"></i></a></li>
+                <li class="list-inline-item"><a class="social-link rounded-circle text-white" href="#"><i class="icon-social-github"></i></a></li>
+            </ul>
+            <p class="text-muted small mb-0">&copy; Persebaran SPBU Bantul 2025</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
